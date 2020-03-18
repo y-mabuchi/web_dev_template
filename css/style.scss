@@ -59,7 +59,12 @@ header {
       li {
         color: #ffffff;
         font-size: 16px;
+        padding-bottom: 0.5px;
         margin-left: 30px;
+
+        .active {
+          border-bottom: 3px solid #E81919;
+        }
 
         a:link,
         a:visited,
@@ -116,5 +121,16 @@ header {
     font-size: 38px;
     letter-spacing: 0;
     padding: 17px 81px;
+  }
+
+  @include mq('sp') {
+    h2 {
+      font-size: 32px;
+    }
+
+    p,
+    button {
+      font-size: 20px;
+    }
   }
 }
