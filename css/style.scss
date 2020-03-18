@@ -76,6 +76,13 @@ header {
       }
     }
   }
+
+  @include mq('tab') {
+    .inner {
+      width: auto;
+      margin-left: 5%;
+    }
+  }
 }
 
 // Main Visual

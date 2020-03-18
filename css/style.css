@@ -58,6 +58,13 @@ header .inner ul li a:active {
   }
 }
 
+@media screen and (max-width: 1085px) {
+  header .inner {
+    width: auto;
+    margin-left: 5%;
+  }
+}
+
 #main-visual {
   background: url(../img/mainvisual.png);
   background-repeat: no-repeat;
