@@ -1,5 +1,5 @@
 // レイアウト幅
-$layout-width-inner: 1180px;
+$layout-width-inner: 1086px;
 
 // ブレークポイント
 $breakpoints: ("sp": "screen and (max-width: 767px)",
@@ -13,5 +13,101 @@ $breakpoints: ("sp": "screen and (max-width: 767px)",
   @media #{map-get($breakpoints, $breakpoint)} {
 
     @content;
+  }
+}
+
+// Color
+$main-blue: #3F51B5;
+$black: #333333;
+$link-blue: #428bca;
+
+// Basics
+body {
+  font-family: "Yu Gothic";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $link-blue;
+  }
+}
+
+// Header
+header {
+  background-color: $main-blue;
+  position: fixed;
+  width: 100%;
+
+  .inner {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1086px;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+
+      li {
+        color: #ffffff;
+        font-size: 16px;
+        margin-left: 30px;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+          color: white;
+        }
+      }
+    }
+
+    @include mq('tab') {
+      ul {
+        display: none;
+      }
+    }
+  }
+}
+
+// Main Visual
+#main-visual {
+  background: url(../img/mainvisual.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  padding-top: 149px;
+  text-align: center;
+
+  h2 {
+    color: $black;
+    font-size: 68px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: $black;
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 82px;
+  }
+
+  button {
+    border: 0;
+    border-radius: 12px;
+    background-color: $main-blue;
+    color: white;
+    font-size: 38px;
+    letter-spacing: 0;
+    padding: 17px 81px;
   }
 }
