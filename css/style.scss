@@ -15,3 +15,35 @@ $breakpoints: ("sp": "screen and (max-width: 767px)",
     @content;
   }
 }
+
+/* Suggested order:
+ * [View]
+ * display
+ * list-style
+ * position
+ * float
+ * clear
+ * 
+ * [Box Model]
+ * width
+ * height
+ * margin
+ * padding
+ * border
+ * 
+ * [Background]
+ * background
+ * 
+ * [Font Text Color]
+ * color
+ * font
+ * text-decoration
+ * text-align
+ * 
+ * [Table]
+ * vertical-align
+ * 
+ * white-space
+ * content
+ * 
+ */
