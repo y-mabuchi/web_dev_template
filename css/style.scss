@@ -16,6 +16,32 @@ $breakpoints: ("sp": "screen and (max-width: 767px)",
   }
 }
 
+// Color
+
+// Basics
+body {
+  margin: 0;
+  font-family: 'Yu Gothic';
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+// Header
+
+// Footer
+
 /* Suggested order:
  * [View]
  * display
