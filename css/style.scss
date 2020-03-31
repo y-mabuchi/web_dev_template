@@ -19,6 +19,13 @@ $breakpoints: ("sp": "screen and (max-width: 767px)",
 // Color
 
 // Basics
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
 body {
   margin: 0;
   font-family: 'Yu Gothic';
