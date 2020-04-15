@@ -38,6 +38,13 @@ a {
   &:hover {
     opacity: 0.6;
   }
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $link-blue;
+  }
 }
 
 h1,
